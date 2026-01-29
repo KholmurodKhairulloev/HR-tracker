@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.table-container {
+  background-color: white;
+  width: 98%; 
+  overflow-x: auto; 
+  margin: 0 auto;
+  height: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ffff; 
+}
+
+
+table {
+  min-width: 1200px; 
+  border-collapse: collapse;
+    }
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 5px;
+  text-align: center;
+}
+
+th {
+  font-weight: 600;
+}
+
+th:first-child,
+td:first-child {
+  position: sticky;
+  left: 0;
+  background: #fff;
+  z-index: 2;
+  min-width: 150px;
+}
+
+thead tr:first-child th {
+  width: 32px;
+}
+
+thead tr:nth-child(2) th {
+  font-size: 12px;
+  color: #777;
+}
+
+.statusDiv {
+  width: 24px;
+  height: 24px;
+  border: 2px solid rgb(227, 226, 226);
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+  cursor: pointer;
+  appearance: none;
+  text-align: center;
+  padding: 0;
+  background: transparent; 
+}
+
+matMenu{
+  background-color: red;
+width: 140px;
+display: flex;
+align-items: center;
+}
+.menuDialog button {
+  display: flex;
+  text-align: center;
+}
+
+
+
+
+
+
+/* Стили для разных статусов */
+.status-present {
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.status-absent {
+  background: #fee2e2;
+  border-color: #fca5a5;
+  color: #991b1b;
+}
+
+.status-late {
+  background: #fef9c3;
+  border-color: #fde047;
+  color: #854d0e;
+}
+
+.status-sick {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1e3a8a;
+}
+
+.status-vacation {
+  background: #f3e8ff;
+  border-color: #d8b4fe;
+  color: #581c87;
+}
+
+.status-none {
+  background: #f9fafb;
+  border-color: #e5e7eb;
+}
+
+.status-none:hover {
+  background: #f3f4f6;
+}
+
+/* Выходные */
+.weekend {
+  background: #e5e7eb;
+  border-color: #d1d5db;
+  color: #9ca3af;
+  cursor: not-allowed;
+}
+
+
+.filter {
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: end;
+  /* background: #f9f9f9; */
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Общий стиль для select */
+.filter select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  background-color: white;
+  border: 2px solid #ddd;
+  border-radius: 6px;
+  padding: 8px 32px 8px 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23666' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+}
+
+/* Ховер эффект */
+.filter select:hover {
+  border-color: #aaa;
+}
+
+
+
+/* Кнопка */
+.filter button {
+  background: #000000;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+.selected-cell {
+  background-color: #e0e0e0; /* Светло-серый фон */
+  border: 2px solid #3f51b5; /* Синяя рамка */
+}
+
+
+
